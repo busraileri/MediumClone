@@ -1,0 +1,93 @@
+body{
+    font-family: "PT Serif", serif;
+
+}
+
+.bg-color{
+    background-color: #F7F4ED; 
+}
+
+.border-bottom-dark{
+    border-bottom: 1px solid #414141;
+}
+
+
+.list-num{
+    color: #34AA45;
+    line-height: 216px;
+    font-weight: 400px;
+    font-size: 300px;
+    margin: 0;
+
+ 
+    font-family: sans-serif;
+    font-weight: 50;
+    font-style:normal;
+   
+}
+
+.footer-button {
+    width: 100%;
+    height: 200px;
+    background-color: #34AA45;
+    border: none;
+    border-radius: 0; /* Başlangıçta köşeler köşeli */
+
+    margin: 0;
+    padding: 0;
+        
+}
+
+.footer-button:hover {
+    border-radius: 100px; /* İmleç üzerine geldiğinde köşeler yuvarlak */
+    background-color: #34AA45; 
+    
+    
+}
+
+.button span{
+    cursor: pointer;
+    display: inline-block; /* Span elemanı inline-block olarak görüntülenir, böylece genişlik ve yükseklik ayarları yapılabilir*/
+    position: relative; /*Span elemanı göreceli konumlandırılır, böylece içindeki pseudo-elemanlar buna göre konumlandırılır*/
+    transition: 0.5s; /* Tüm geçişlerin (transition) süresi 0.5 saniye olarak ayarlanır*/
+
+}
+
+.button span:after {
+    position: absolute;  /* Pseudo-eleman (span:after) mutlak konumlandırılır, parent (span) elemanına göre konumlandırılır */
+    opacity: 0;  /* Opaklık sıfır, yani görünmez */
+    top: 0;  /* Pseudo-eleman span elemanının üst kısmına hizalanır */
+    right: -20px;  /* Pseudo-eleman span elemanının sağından 20px dışarı taşar */
+    transition: 0.5s;  /* Geçiş süresi 0.5 saniye olarak ayarlanır */
+}
+
+/*cursor ile animasyon kısmı*/
+
+.button:hover span {
+    padding-right: 25px;
+}
+  
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.foot-text{
+    color:#6B6B6B;
+    cursor: pointer;
+    text-align:center;
+    font-size:small;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
